@@ -36,6 +36,8 @@ h1 {
   line-height: 1.1;
 }
 
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -49,6 +51,7 @@ button {
 }
 button:hover {
   border-color: #646cff;
+  
 }
 button:focus,
 button:focus-visible {
@@ -68,52 +71,25 @@ button:focus-visible {
   }
 }
 
-@keyframes boxem {
-  0% {border-color: #535bf2; top: 0; left: 0;}
-  10% {border-color: crimson; top: 250px; left: 150px;}
-}
 
-@keyframes example {
-  0%   {border:3px solid red; left:0px; top:0px;}
-  25%  {border:5px solid yellow; left:500px; top:0px;}
-  50%  {border:5px soild blue; left:500px; top:200px;}
-  75%  {border:5px solid green; left:0px; top:200px;}
-  100% {border:5px solid #3c00ff; left:0px; top:0px;}
-}
 
-@keyframes example1 {
-  0%   {border:3px solid red; left:0px; top:0px;}
-  25%  {border:5px solid yellow; left:500px; top:0px;}
-  50%  {border:5px soild blue; left:500px; top:200px;}
-  75%  {border:5px solid green; left:0px; top:200px;}
-  100% {border:5px solid #3c00ff; left:0px; top:0px;}
-}
 
 .box {
   border: 2px solid red;
   padding: 20px;
   margin: 10px;
-  width: 200px;
-  position: relative;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  width: 250px;
+  height: 50px;
+ 
+  
 }
 
-.box1 {
-  border: 2px solid red;
-  padding: 20px;
-  margin: 10px;
-  width: 200px;
-  position: relative;
-  animation-name: example1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-}
 
 
 .boxes {
-  width: 100vw;
-  overflow: auto;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }

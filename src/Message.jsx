@@ -21,7 +21,7 @@ const Message = (props) => {
     if (error) return <p>{error.message}</p>
   return (
     <div className='boxes'>
-        {data?.messages?.items?.map((e,index) => (<h1 className={index%2 == 0 ? "box" : "box1"}>{index} : {e.id}</h1>))}
+        {data?.messages?.items?.map((e,index) => (<h1 className="box">{index} : {e.id}</h1>))}
     </div>
   )
 }
